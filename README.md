@@ -1,41 +1,42 @@
-# Polygon
+# KubRTK_Polygon
 
-A mobile Android app for tracking points at the “Kub RTK” polygon..
-Allows you to place cells, keep track of points for tasks and penalties,
-save and load polygon diagrams.
+Мобильное Android-приложение для отметки баллов на полигоне «Кубок РТК».
+Позволяет расставлять клетки, вести подсчёт баллов по заданиям и штрафам,
+сохранять и загружать схемы полигона.
 
-## 📥 Download
-.
-The ready-made APK file is in the [Releases](../../releases/latest) section.
+## 📥 Скачать
 
-1. Download the latest APK to your phone..
-2. Allow installation from unknown sources if required.
-3. Install and launch.
+Готовый APK — в разделе [Releases](../../releases/latest).
 
-## ✨ Opportunities
+1. Скачайте последний APK на телефон.
+2. Разрешите установку из неизвестных источников.
+3. Установите и запустите.
 
-- **Game board** with a grid ranging from 3×3 to 50×50 cells.
-- **Zoom** from 10% to 100% with auto‑scrolling.
-- **Cells with multiple parts** (for example, “Door”, “Mines”, “Slide with pipes”) — displayed as separate mini‑rectangles.
-- **Cell stacking** at one position — several cells share one cell.
--**Constructor** — placing and removing cells, saving the diagram to a file.
-- **Tasks and penalties** — counters with restrictions, automatic score calculation.
-- **Automatic update check** — the app notifies about new releases.
+## ✨ Возможности
 
-## 🛠 Building from source
+- **Игровое поле** с сеткой от 3×3 до 50×50 клеток.
+- **Зум** от 10% до 300%.
+- **Клетки с несколькими частями** — отображаются как отдельные мини-прямоугольники.
+- **Стекинг клеток** — несколько клеток делят одну ячейку.
+- **Конструктор** — расстановка, удаление, сохранение схемы в файл.
+- **Задания и штрафы** — счётчики с ограничениями, автоматический подсчёт баллов.
+- **Автопроверка обновлений** — приложение уведомляет о новых релизах.
 
-Requires Linux (Ubuntu) or WSL with Python 3.11+ and Buildozer installed.
+## 🛠 Сборка из исходников
 
-# 1. Clone the repository
+Требуется Linux (Ubuntu) или WSL с Python 3.11+ и Buildozer.
+
+```bash
+# 1. Клонирование
 git clone https://github.com/MegaSound1373/KubRTK_Polygon.git
-cd polygon
+cd KubRTK_Polygon
 
-# 2. Create a virtual environment
+# 2. Виртуальное окружение
 python3 -m venv buildozer-env
 source buildozer-env/bin/activate
 
-# 3. Install Buildozer
+# 3. Buildozer
 pip install buildozer cython
 
-# 4. Build the APK (the first time will take 30–60 minutes)
+# 4. Сборка APK (первый раз 30–60 минут)
 buildozer -v android debug
