@@ -27,7 +27,7 @@ The ready-made APK file is in the [Releases](../../releases/latest) section.
 Requires Linux (Ubuntu) or WSL with Python 3.11+ and Buildozer installed.
 
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/polygon.git
+git clone https://github.com/MegaSound1373/KubRTK_Polygon.git
 cd polygon
 
 # 2. Create a virtual environment
